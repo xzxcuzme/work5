@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>work5</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid d-flex justify-content-between">
+      <section class="col-lg-2 d-flex justify-content-start">
+        <ul class="menu">
+          <li><a href="index.html"><img src="img/logo.png" alt="work5" class="logo"></a></li>
+          <li><a href="#" class="home">Главная</a></li>
+          <li><a href="#" class="checked shop">Мои магазины</a></li>
+          <li><a href="#" class="promo">Промоматериалы</a></li>
+          <li><a href="#" class="chart">Статистика</a></li>
+          <li><a href="#" class="balance">Баланс</a></li>
+          <li><a href="#" class="profile">Персональные данные</a></li>
+          <li><a href="#" class="FAQ">FAQ</a></li>
+          <li><a href="#" class="tp">Техподдержка</a></li>
+          <li><a href="#" class="logout">Выход</a></li>
+        </ul>
+      </section>
+      <section class="col-lg-10 navi d-flex justify-content-between">
+        <div class="container">
+          <div class="row justify-content-start header .flex-nowrap">
+            <div class="col-lg-3">
+              <nav>
+                <ul class="d-flex justify-content-start nav_bar .flex-nowrap align-items-center">
+                  <li class="menu__item">
+                    <a href="#">Главная</a>
+                  </li>
+                  <li class="menu__item"><img src="img/arrow.png" width="7" height="9" alt="arrow"></li>
+                  <li class="menu__item">
+                    <a href="#" class="arrow-point d-flex .flex-nowrap">Мои магазины</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-4 ml-auto d-flex justify-content-end .flex-nowrap user__menu">
+              <img src="img/messege.png" width="65" height="65" alt="work5" class="logo d-flex align-self-center align-items-center">
+              <div class="square d-flex user justify-content-between align-self-center align-items-center .flex-nowrap">
+                <img src="img/userpic.jpg" width="98" height="61" alt="work5" class="userpic d-flex align-self-center">
+                <a class="square__name align-self-center">Максим Добжанский</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 d-flex align-items-center .flex-nowrap create">
+              <button type="button" name="button" class="button createe btn btn-primary" data-toggle="modal" data-target="#exampleModal">Создать свой магазин</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <h2>Управление магазинами</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-11">
+              <div class="square_u">
+                <div class="row justify-content-start d-flex flex-nowrap">
+                  <div class="col-lg-1">
+                    <h3>№</h3>
+                  </div>
+                  <div class="col-lg-3">
+                    <h3>Название</h3>
+                  </div>
+                  <div class="col-lg-3">
+                    <h3>Адрес</h3>
+                  </div>
+                  <div class="col-lg-5 action">
+                    <h3>Действие</h3>
+                  </div>
+                </div>
+                <div class="row d-flex flex-nowrap justify-content-start rowshop rowline align-items-end">
+                  <div class="col-lg-1">
+                    <p>12345</p>
+                  </div>
+                  <div class="col-lg-3">
+                    <p>Дипломная работа</p>
+                  </div>
+                  <div class="col-lg-3">
+                    <p>http://www.work5.ru/services</p>
+                  </div>
+                  <div class="col-lg-5">
+                    <button type="button" name="button" class="button__edit pencil">Редактировать</button>
+                    <button type="button" name="button" class="button__gray cancel">Редактировать</button>
+                  </div>
+                </div>
+                <div class="row d-flex flex-nowrap  justify-content-start rowshop align-items-end">
+                  <div class="col-lg-1">
+                    <p>12345</p>
+                  </div>
+                  <div class="col-lg-3">
+                    <p>Дипломная работа</p>
+                  </div>
+                  <div class="col-lg-3">
+                    <p>http://www.work5.ru/services</p>
+                  </div>
+                  <div class="col-lg-5">
+                    <button type="button" name="button" class="button__edit pencil">Редактировать</button>
+                    <button type="button" name="button" class="button__gray cancel">Редактировать</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-around">
+          <h2 class="modal-title" id="exampleModalLabel">Создать магазин</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="img/cancel_popup.png" width="17" height="17" alt="close" class="close__pic">
+          </button>
+        </div>
+        <form class="popup">
+          <div class="form-row d-flex justify-content-around">
+            <div class="form-group form-group_Template col-md-5">
+              <label for="FormTemplate">Шаблон</label>
+              <select class="form-control form-control_color" id="FormTemplate">
+                <option>Стандартный</option>
+                <option>Стандартный 2</option>
+                <option>Стандартный 3</option>
+                <option>Стандартный 4</option>
+                <option>Стандартный 5</option>
+              </select>
+            </div>
+            <div class="form-group col-md-5">
+              <label for="FormColor">Цветовая схема</label>
+              <select class="form-control form-control_color" id="FormColor">
+                <option>Классическая</option>
+                <option>Классическая 2</option>
+                <option>Классическая 3</option>
+                <option>Классическая 4</option>
+                <option>Классическая 5</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group form-group__domen col-md-9">
+            <label for="inputDomen">Домен</label>
+            <input type="text" class="form-control" id="inputDomen" placeholder="Например: ivangrozniy">
+          </div>
+          <div class="description d-flex">
+            <img src="img/warning.png" width="52" height="52" alt="warning" class="warning__pic">
+            <p class="description__domen">В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work 5. После создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a href="#">ссылке</a></p>
+          </div>
+        </form>
+        <div class="modal-footer-button">
+          <button type="button" class="form_button button__close btn btn-secondary" data-dismiss="modal">Отмена</button>
+          <button type="button" class="form_button button__create btn btn-primary">Создать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
